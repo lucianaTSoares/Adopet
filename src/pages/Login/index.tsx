@@ -22,7 +22,7 @@ export default function Login() {
           <Button>Quero me cadastrar</Button>
         </div>
         <div className="absolute -bottom-8">
-          <img className="max-h-mobile max-w-mobile" src={ilustration} alt="" />
+          <img src={ilustration} alt="" />
         </div>
       </div>
     </>
