@@ -1,3 +1,3 @@
-export default function Login() {
+export default function Register() {
   return <>Register is running</>;
 }
