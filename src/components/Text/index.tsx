@@ -6,6 +6,7 @@ const theme = {
     black: "#444444",
     lightGray: "#BCBCBC",
     gray: "#737380",
+    blue: "#3772FF",
   },
   sizes: {
     xxsmall: "0.625rem", // fs: 10px

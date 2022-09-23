@@ -6,5 +6,25 @@
   html {
     font-family: "Poppins", system-ui, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    /* Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: #fc7071 #ffffff0;
+
+    /* Chrome, Edge, and Safari */
+    ::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #fc7071;
+      border-radius: 10px;
+      border: 3px solid #ffffff;
+    }
   }
 }
