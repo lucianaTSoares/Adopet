@@ -9,7 +9,12 @@ export default function Introduction() {
   const { setBackgroundConfig } = usePages();
 
   useEffect(
-    () => setBackgroundConfig({ color: "secondary", hideDecoration: false }),
+    () =>
+      setBackgroundConfig({
+        color: "secondary",
+        hidePetsDecoration: false,
+        hidePatDecoration: true,
+      }),
     []
   );
 

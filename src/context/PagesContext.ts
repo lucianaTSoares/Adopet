@@ -3,17 +3,19 @@ import { createContext, Dispatch, SetStateAction } from "react";
 type PageContextType = {
   backgroundConfig: {
     color?: string;
-    hideDecoration?: boolean;
+    hidePetsDecoration?: boolean;
+    hidePatDecoration?: boolean;
   };
   setBackgroundConfig: Dispatch<
-    SetStateAction<{ color: string; hideDecoration: boolean }>
+    SetStateAction<{
+      color?: string;
+      hidePetsDecoration: boolean;
+      hidePatDecoration: boolean;
+    }>
   >;
 };
 
 export const PagesContext = createContext<PageContextType>({
-  backgroundConfig: {
-    color: "",
-    hideDecoration: false,
-  },
+  backgroundConfig: {},
   setBackgroundConfig: () => {},
 });

@@ -13,8 +13,8 @@ import { PagesContext } from "./context/PagesContext.js";
 
 function App() {
   const [backgroundConfig, setBackgroundConfig] = useState({
-    color: "white",
-    hideDecoration: true,
+    hidePetsDecoration: true,
+    hidePatDecoration: true,
   });
 
   return (

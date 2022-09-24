@@ -1,20 +1,29 @@
 import format1 from "../../assets/background/format1.svg";
 import format2 from "../../assets/background/format2.svg";
 import ilustration from "../../assets/background/illustration.svg";
+import pats from "../../assets/background/pat.svg";
 
 interface BackgroundProps {
   children: React.ReactNode;
-  backgroundConfig: { color?: string; hideDecoration?: boolean };
+  backgroundConfig: {
+    color?: string;
+    hidePetsDecoration?: boolean;
+    hidePatDecoration?: boolean;
+  };
 }
 
 export default function Background({
   children,
   backgroundConfig,
 }: BackgroundProps) {
-
+  console.log(backgroundConfig);
   return (
-    <div className={`absolute w-screen ${backgroundConfig.color === 'secondary' ? 'bg-secondary' : 'bg-white'}`}>
-      <div className="relative z-10">{children}</div>
+    <div
+      className={`absolute ${
+        backgroundConfig.color === "secondary" ? "bg-secondary" : "bg-white"
+      }`}
+    >
+      <div className="relative z-10 w-screen ">{children}</div>
       <div className="absolute top-0 left-0">
         <img src={format1} alt="" />
       </div>
@@ -23,9 +32,19 @@ export default function Background({
       </div>
       <div
         className="justify-center mr-6"
-        style={{ display: backgroundConfig.hideDecoration ? "none" : "flex" }}
+        style={{
+          display: backgroundConfig.hidePetsDecoration ? "none" : "flex",
+        }}
       >
         <img className="absolute bottom-10" src={ilustration} alt="" />
+      </div>
+      <div
+        className="absolute -top-1 -right-3"
+        style={{
+          display: backgroundConfig.hidePatDecoration ? "none" : "unset",
+        }}
+      >
+        <img src={pats} alt="" />
       </div>
     </div>
   );
