@@ -8,23 +8,19 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
 
-    /* Firefox */
-    scrollbar-width: auto;
-    scrollbar-color: #fc7071 #ffffff0;
-
-    /* Chrome, Edge, and Safari */
     ::-webkit-scrollbar {
-      width: 16px;
+      width: 6px;
+      height: 6px;
     }
-
-    ::-webkit-scrollbar-track {
-      background: #ffffff0;
-    }
-
     ::-webkit-scrollbar-thumb {
-      background-color: #fc7071;
-      border-radius: 10px;
-      border: 3px solid #ffffff;
+      background: #fff;
+      border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff9d9e;
+    }
+    ::-webkit-scrollbar-track {
+      background: #3772ff;
     }
   }
 }

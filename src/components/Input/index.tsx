@@ -20,12 +20,12 @@ export default function Input({
   handleChange,
 }: InputProps) {
   return (
-    <div className="mt-5">
+    <div className="mt-5 w-[100%]">
       <label htmlFor={id}>
         <Text color="gray">{label}</Text>
       </label>
       <input
-        className="py-3 px-4 w-72 mt-1 rounded-md shadow-md mix-blend-normal placeholder-[#BCBCBC] outline-none text-sm bg-[#F7F7F7] text-[#737380]"
+        className="py-3 w-[100%] text-center px-4 mt-1 rounded-md shadow-input placeholder-[#BCBCBC] outline-none text-sm bg-[#F7F7F7] text-[#737380]"
         type={type}
         placeholder={placeholder}
         id={id}

@@ -14,6 +14,9 @@ module.exports = {
         primary: "#36D6AD",
         secondary: "#3772FF",
       },
+      boxShadow: {
+        input: "0px 2px 2px rgba(0, 0, 0, 0.15)",
+      },
     },
     maxHeight: {
       mobile: "70vh",
