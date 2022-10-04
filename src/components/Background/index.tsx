@@ -39,7 +39,7 @@ export default function Background({
         <img className="absolute bottom-10" src={ilustration} alt="" />
       </div>
       <div
-        className="absolute -top-1 -right-3"
+        className="absolute -top-4 right-0"
         style={{
           display: backgroundConfig.hidePatDecoration ? "none" : "unset",
         }}
