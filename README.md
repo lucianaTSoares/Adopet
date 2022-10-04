@@ -14,15 +14,15 @@ Uma das causas que apoio e compactuo são a causa animal e a tecnologia no senti
 
 ## Tecnologias e ferramentas utilizadas
 
-- React
-- React Router
-- TypeScript
-- Tailwind CSS
-- Styled Components
-- Context API
-- Vite
-- Figma
-- VS Code
+- [React](https://pt-br.reactjs.org/)
+- [React Router](https://reactrouter.com/en/main)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Styled Components](https://styled-components.com/)
+- [Context API](https://reactjs.org/docs/context.html)
+- [Vite](https://vitejs.dev/)
+- [Figma Adopet](https://www.figma.com/file/TlfkDoIu8uyjZNla1T8TpH/Challenge---Adopet?node-id=518%3A11)
+- [VS Code](https://code.visualstudio.com/)
 
 ## Como rodar o projeto localmente?
 
