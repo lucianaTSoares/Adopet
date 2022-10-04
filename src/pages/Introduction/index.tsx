@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import { LogoWhite } from "../../utils/exportSVG";
 import { PagesContext } from "../../context/PagesContext";
 import { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Introduction() {
   const usePages = () => useContext(PagesContext);
@@ -31,8 +32,12 @@ export default function Introduction() {
           Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a
           gente!
         </Text>
-        <Button>Já tenho conta</Button>
-        <Button>Quero me cadastrar</Button>
+        <Link to="/login">
+          <Button>Já tenho conta</Button>
+        </Link>
+        <Link to="/register">
+          <Button>Quero me cadastrar</Button>
+        </Link>
       </div>
     </div>
   );
