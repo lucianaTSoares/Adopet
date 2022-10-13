@@ -20,7 +20,7 @@ export default function Background({
   return (
     <div
       className={`absolute ${
-        backgroundConfig.color === "secondary" ? "bg-secondary" : "bg-white"
+        backgroundConfig.color === "secondary" ? "bg-background-secondary" : "bg-white"
       }`}
     >
       <div className="relative z-10 w-screen ">{children}</div>

@@ -11,8 +11,10 @@ module.exports = {
         icon: {
           white: "#fcf0e3",
         },
-        primary: "#36D6AD",
-        secondary: "#3772FF",
+        background: {
+          primary: "#36D6AD",
+          secondary: "#3772FF",
+        },
       },
       boxShadow: {
         input: "0px 2px 2px rgba(0, 0, 0, 0.15)",

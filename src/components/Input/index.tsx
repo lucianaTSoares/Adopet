@@ -20,7 +20,7 @@ export default function Input({
   handleChange,
 }: InputProps) {
   return (
-    <div className="mt-5 w-[100%]">
+    <div className="mt-5">
       <label htmlFor={id}>
         <Text color="gray">{label}</Text>
       </label>

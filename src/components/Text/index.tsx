@@ -42,9 +42,12 @@ type TextProps = {
   size?: keyof typeof theme.sizes;
   weight?: keyof typeof theme.weights;
   align?: keyof typeof theme.aligns;
+  tag?: "p" | "h1";
 };
 
-export const Text = styled.p<TextProps>`
+export const Text = styled.p.attrs<TextProps>(({ tag = "p" }) => ({
+  as: `${tag}`,
+}))<TextProps>`
   ${({
     color = "white",
     size = "normal",
