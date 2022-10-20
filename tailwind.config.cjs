@@ -14,6 +14,7 @@ module.exports = {
         background: {
           primary: "#36D6AD",
           secondary: "#3772FF",
+          gray: "#F7F7F7",
         },
       },
       boxShadow: {
