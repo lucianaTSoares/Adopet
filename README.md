@@ -42,7 +42,7 @@ $ npm install
 $ yarn
 ```
 
-3. Pronto! Agora é só rodar o projeto com o comando `npm run dev` ou `yarn run dev`, bastando acessar o link http://127.0.0.1:5173/ para visualizar o site no navegador localmente! 😊
+3. Pronto! Agora é só rodar o projeto com o comando `npm run dev` ou `yarn run dev`, bastando acessar o link mostrado no console para visualizar o site no navegador localmente! 😊
 
 ## Autora
 
